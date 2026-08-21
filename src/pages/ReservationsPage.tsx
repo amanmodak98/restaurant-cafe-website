@@ -1,5 +1,5 @@
 import { useState, useRef, type FormEvent, type ChangeEvent } from "react";
-import { motion, useInView } from "framer-motion";
+import { Variants, motion, useInView } from "framer-motion";
 
 interface FormData {
   firstName: string;
@@ -46,7 +46,7 @@ const steps = [
   },
 ];
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
 };

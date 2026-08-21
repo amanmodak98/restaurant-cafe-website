@@ -31,10 +31,6 @@ const images: GalleryImage[] = [
 
 const filterCategories: FilterCategory[] = ["All", "Cuisine", "Ambiance", "Events", "Behind the Scenes"];
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
 
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState<FilterCategory>("All");

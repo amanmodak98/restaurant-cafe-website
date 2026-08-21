@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, type Transition } from "framer-motion";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -9,7 +9,7 @@ const pageVariants = {
   exit: { opacity: 0, y: -20 },
 };
 
-const pageTransition = {
+const pageTransition: Transition = {
   duration: 0.35,
   ease: "easeInOut",
 };

@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import { Variants, motion, AnimatePresence, useInView } from "framer-motion";
 
 type Category = "Starters" | "Mains" | "Desserts" | "Drinks";
 
@@ -154,7 +154,7 @@ const menuData: Record<Category, MenuItem[]> = {
   ],
 };
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };

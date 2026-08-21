@@ -148,6 +148,7 @@ export default function Footer() {
           <p style={{ color: "#a8a29e", fontSize: "0.8125rem" }}>
             © {new Date().getFullYear()} Ember &amp; Oak. All rights reserved.
           </p>
+          <p style={{ color: "#a8a29e", fontSize: "0.8125rem" }}>Designed &amp; Developed by <a href="https://www.infirexa.tech" target="_blank" rel="noopener noreferrer">Infirexa</a></p>
 
           {/* Social icons */}
           <div style={{ display: "flex", gap: "20px" }}>
